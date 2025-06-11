@@ -1,0 +1,14 @@
+.social-button {
+  margin-right: 10px;
+}
+
+.social-container {
+  display: flex;
+}
+
+@media (width <640px) {
+  .social-container {
+    justify-content: center;
+    margin-bottom: 5px;
+  }
+}
