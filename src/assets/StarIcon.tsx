@@ -1,8 +1,8 @@
 export default function StarIcon({ color }: { color: string }) {
   return (
     <svg
-      width="25"
-      height="25"
+      width="28"
+      height="28"
       viewBox="0 0 420 436"
       xmlns="http://www.w3.org/2000/svg"
     >

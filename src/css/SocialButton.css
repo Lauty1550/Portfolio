@@ -9,6 +9,6 @@
 @media (width <640px) {
   .social-container {
     justify-content: center;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
   }
 }

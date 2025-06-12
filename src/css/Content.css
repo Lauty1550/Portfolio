@@ -27,6 +27,7 @@ figure {
 
 .titulo {
   font-size: 2.1em;
+  font-weight: 800;
 }
 
 .titulo-proyecto {
@@ -34,15 +35,24 @@ figure {
 }
 
 .descripcion {
-  font-family: "Raleway", sans-serif;
   margin-top: -10px;
   font-size: 1.3em;
-  font-style: italic;
-  font-weight: lighter;
+  font-weight: 400;
 }
 
 .descripcion-proyecto {
   font-size: 1.2em;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-left: 15px;
+}
+
+.parrafo {
+  margin-top: 0;
 }
 
 @media (width < 640px) {
