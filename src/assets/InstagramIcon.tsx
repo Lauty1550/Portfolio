@@ -29,7 +29,13 @@ function InstagramIcon({ color }: { color: string }) {
 export default function InstagramButton({ color }: { color: string }) {
   return (
     <main className="social-button">
-      <InstagramIcon color={color} />
+      <a
+        href="https://www.instagram.com/lautyy.jaime?igsh=YWd6Mm15MWdwYnJp"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <InstagramIcon color={color} />
+      </a>
     </main>
   );
 }

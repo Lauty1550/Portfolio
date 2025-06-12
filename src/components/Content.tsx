@@ -64,7 +64,7 @@ export default function Content({ darkMode }: { darkMode: boolean }) {
         <h1 className="subtitulo">
           Email <EmailIcon color={darkMode ? "white" : "black"} />
         </h1>
-        <MailComponent />
+        <MailComponent darkMode={darkMode} />
       </section>
 
       <br></br>

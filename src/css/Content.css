@@ -5,7 +5,8 @@ figure {
 
 .content-presentacion {
   margin-top: 20px;
-  margin-left: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
   display: flex;
   height: 180px;
   gap: 30px;
