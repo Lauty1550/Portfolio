@@ -92,4 +92,8 @@
   .image-header {
     border-color: aliceblue;
   }
+  .header-title {
+    color: rgb(60, 70, 180);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.04);
+  }
 }

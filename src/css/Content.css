@@ -33,6 +33,7 @@ figure {
 
 .titulo-proyecto {
   font-size: 1.6em;
+  font-weight: 800;
 }
 
 .descripcion {
@@ -52,11 +53,19 @@ figure {
   margin-left: 15px;
 }
 
-.parrafo {
-  margin-top: 0;
+.subtitulo {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-weight: 800;
 }
 
-@media (width < 640px) {
+.parrafo {
+  margin-top: 0;
+  font-weight: 350;
+}
+
+@media (width < 660px) {
   .content-presentacion {
     height: 260px;
     flex-direction: column;
@@ -79,6 +88,9 @@ figure {
   .descripcion {
     color: rgb(203 213 225);
   }
+  .subtitulo {
+    color: rgb(129 140 248);
+  }
 }
 
 .light-mode {
@@ -87,5 +99,14 @@ figure {
   }
   .avatar-content {
     background-color: rgb(213 219 242);
+  }
+  .subtitulo {
+    color: rgb(100, 116, 139);
+  }
+  .titulo {
+    color: rgb(60, 70, 180);
+  }
+  .titulo-proyecto {
+    color: rgb(30 41 59);
   }
 }
