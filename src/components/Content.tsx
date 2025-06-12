@@ -5,9 +5,11 @@ import ProyectoComponent from "./ProyectoComponent";
 import StarIcon from "../assets/StarIcon";
 import GitHubButton from "../assets/GitHubIcon";
 import InstagramButton from "../assets/InstagramIcon";
-
 import "../css/SocialButton.css";
 import LinkedInButton from "../assets/LinkedInIcon";
+import AboutMeIcon from "../assets/AboutMeIcon";
+import EmailIcon from "../assets/EmailIcon";
+import MailComponent from "./MailComponent";
 
 export default function Content({ darkMode }: { darkMode: boolean }) {
   return (
@@ -28,8 +30,19 @@ export default function Content({ darkMode }: { darkMode: boolean }) {
       </section>
       <hr className="linea-horizontal"></hr>
 
-      <section>
-        <h1 className="proyectos">
+      <section className="section">
+        <h1 className="subtitulo">
+          Sobre mi <AboutMeIcon color={darkMode ? "white" : "black"} />
+        </h1>
+        <p className="parrafo">
+          Ultimo año en la carrera analista en TIC de la UNLP
+        </p>
+      </section>
+
+      <br></br>
+
+      <section className="section">
+        <h1 className="subtitulo">
           {" "}
           Proyectos <StarIcon color={darkMode ? "white" : "black"} />
         </h1>
@@ -45,13 +58,16 @@ export default function Content({ darkMode }: { darkMode: boolean }) {
         />
       </section>
 
-      <p style={{ marginLeft: "2px" }}>
-        {Array(100)
-          .fill(
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.."
-          )
-          .join(" ")}
-      </p>
+      <br></br>
+
+      <section className="section">
+        <h1 className="subtitulo">
+          Email <EmailIcon color={darkMode ? "white" : "black"} />
+        </h1>
+        <MailComponent darkMode={darkMode} />
+      </section>
+
+      <br></br>
     </main>
   );
 }

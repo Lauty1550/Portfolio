@@ -26,7 +26,13 @@ function GitHubIcon({ color }: { color: string }) {
 export default function GitHubButton({ color }: { color: string }) {
   return (
     <main className="social-button">
-      <GitHubIcon color={color} />
+      <a
+        href="https://github.com/Lauty1550"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <GitHubIcon color={color} />
+      </a>
     </main>
   );
 }
