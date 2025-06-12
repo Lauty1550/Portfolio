@@ -5,8 +5,9 @@ import ProyectoComponent from "./ProyectoComponent";
 import StarIcon from "../assets/StarIcon";
 import GitHubButton from "../assets/GitHubIcon";
 import InstagramButton from "../assets/InstagramIcon";
-import LinkedInButton from "../assets/LinkedinIcon";
+
 import "../css/SocialButton.css";
+import LinkedInButton from "../assets/LinkedInIcon";
 
 export default function Content({ darkMode }: { darkMode: boolean }) {
   return (
