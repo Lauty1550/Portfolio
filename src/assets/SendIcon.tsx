@@ -20,10 +20,14 @@ function SendIcon({ color }: { color: string }) {
 }
 
 export default function SendButton({ color }: { color: string }) {
+  function sendMail() {
+    window.location.href = "mailto:lautyjaime09@gmail.com";
+  }
+
   return (
-    <main className="mail-button tooltip-wrapper">
+    <button className="mail-button tooltip-wrapper" onClick={sendMail}>
       <SendIcon color={color} />
       <span className="tooltip-text">Enviar correo</span>
-    </main>
+    </button>
   );
 }

@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "../css/Mail.css";
 function CopyIcon({ color }: { color: string }) {
   return (
@@ -17,10 +18,20 @@ function CopyIcon({ color }: { color: string }) {
 }
 
 export default function CopyButton({ color }: { color: string }) {
+  const [copied, setCopied] = useState<boolean>(false);
+  async function handleCopy() {
+    await navigator.clipboard.writeText("lautyjaime09@gmail.com");
+    setCopied(true);
+    setTimeout(() => setCopied(false), 1500);
+  }
+
   return (
-    <main className="mail-button  tooltip-wrapper">
+    <button className="mail-button  tooltip-wrapper" onClick={handleCopy}>
       <CopyIcon color={color} />
-      <span className="tooltip-text">Copiar correo</span>
-    </main>
+      <span className="tooltip-text">
+        {" "}
+        {copied ? "Copiado" : "Copiar correo"}
+      </span>
+    </button>
   );
 }
