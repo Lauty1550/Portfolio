@@ -1,15 +1,9 @@
 import MoonIcon from "../assets/MoonIcon";
 import SunIcon from "../assets/SunIcon";
+import { useTheme } from "../context/ThemeContext";
 
-type SwitchButtonProps = {
-  darkMode: boolean;
-  toggleDarkMode: () => void;
-};
-
-export default function SwitchButton({
-  darkMode,
-  toggleDarkMode,
-}: SwitchButtonProps) {
+export default function SwitchButton() {
+  const { darkMode, toggleDarkMode } = useTheme();
   return (
     <>
       <button className="switch-theme-color" onClick={toggleDarkMode}>

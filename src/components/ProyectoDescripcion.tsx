@@ -1,16 +1,21 @@
+import BotonLink from "./BotonLink";
+
 type ProyectoDescripcionProps = {
   titulo: string;
   descripcion: string;
+  pageUrl: string;
 };
 
 export default function ProyectoDescripcion({
   titulo,
   descripcion,
+  pageUrl,
 }: ProyectoDescripcionProps) {
   return (
     <main className="proyecto-informacion">
       <h1 className="titulo-proyecto">{titulo}</h1>
       <h2 className="descripcion descripcion-proyecto">{descripcion}</h2>
+      <BotonLink pageUrl={pageUrl} />
     </main>
   );
 }

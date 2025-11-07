@@ -10,8 +10,11 @@ import LinkedInButton from "../assets/LinkedInIcon";
 import AboutMeIcon from "../assets/AboutMeIcon";
 import EmailIcon from "../assets/EmailIcon";
 import MailComponent from "./MailComponent";
+import { useTheme } from "../context/ThemeContext";
 
-export default function Content({ darkMode }: { darkMode: boolean }) {
+export default function Content() {
+  const { darkMode } = useTheme();
+
   return (
     <main className="content">
       <section className="content-presentacion">
@@ -50,11 +53,13 @@ export default function Content({ darkMode }: { darkMode: boolean }) {
           imagenUrl="Schneider.jpg"
           titulo="Captain Tsubasa Team"
           descripcion="Calculadora de estadistiscas y sinergias de jugadores"
+          pageUrl="https://kaiser-calc-js-git-develop-lautyjaime09-gmailcoms-projects.vercel.app/"
         />
         <ProyectoComponent
           imagenUrl="/FloorPlan.png"
           titulo="FloorPlan Management"
           descripcion="Sistema de organizacion de planos de construccion"
+          pageUrl="https://floor-plan-management-system.vercel.app/home"
         />
       </section>
 
@@ -64,7 +69,7 @@ export default function Content({ darkMode }: { darkMode: boolean }) {
         <h1 className="subtitulo">
           Email <EmailIcon color={darkMode ? "white" : "black"} />
         </h1>
-        <MailComponent darkMode={darkMode} />
+        <MailComponent />
       </section>
 
       <br></br>

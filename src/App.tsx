@@ -1,14 +1,12 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import Header from "./components/Header";
 import "./css/Root.css";
 import SwitchButton from "./components/SwitchButton";
 import Content from "./components/Content";
+import { useTheme } from "./context/ThemeContext";
 
 export default function App() {
-  const [darkMode, setDarkmode] = useState(() => {
-    const saved = localStorage.getItem("darkMode");
-    return saved !== null ? JSON.parse(saved) : true; // Modo oscuro por defecto
-  });
+  const { darkMode } = useTheme();
 
   useEffect(() => {
     const body = document.body;
@@ -24,19 +22,11 @@ export default function App() {
     localStorage.setItem("darkMode", JSON.stringify(darkMode));
   }, [darkMode]);
 
-  function toggleDarkMode() {
-    setDarkmode((prev: boolean) => !prev);
-  }
-
   return (
     <main className="root">
       <div className="home">
-        <Header
-          switchButton={
-            <SwitchButton darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
-          }
-        />
-        <Content darkMode={darkMode} />
+        <Header switchButton={<SwitchButton />} />
+        <Content />
 
         {/* <Footer/>  */}
       </div>
