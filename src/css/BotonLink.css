@@ -11,6 +11,7 @@
   font-weight: bold;
   text-decoration: none;
   transition: transform 0.3s ease;
+  cursor: pointer;
 }
 
 .boton-link:hover {

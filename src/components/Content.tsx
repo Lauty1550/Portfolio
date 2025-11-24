@@ -35,10 +35,20 @@ export default function Content() {
 
       <section className="section">
         <h1 className="subtitulo">
-          Sobre mi <AboutMeIcon color={darkMode ? "white" : "black"} />
+          Sobre mi <AboutMeIcon color={darkMode ? "white" : "#424dadff"} />
         </h1>
         <p className="parrafo">
-          Ultimo año en la carrera analista en TIC de la UNLP
+          Soy estudiante de la UNLP y estoy finalizando la carrera de Analista
+          en Tecnologías de la Información y la Comunicación (ATIC).
+        </p>
+        <p className="parrafo">
+          A partir del año que viene voy a continuar mis estudios en la
+          Licenciatura en Sistemas, ingresando directamente en tercer año.
+        </p>
+        <p className="parrafo">
+          Me apasiona el desarrollo de software tanto en frontend como en
+          backend, y disfruto especialmente trabajar con React en el entorno
+          web.
         </p>
       </section>
 
@@ -47,19 +57,28 @@ export default function Content() {
       <section className="section">
         <h1 className="subtitulo">
           {" "}
-          Proyectos <StarIcon color={darkMode ? "white" : "black"} />
+          Proyectos <StarIcon color={darkMode ? "white" : "#424dadff"} />
         </h1>
+        <ProyectoComponent
+          imagenUrl="/FloorPlan.jpg"
+          titulo="FloorPlan Management"
+          descripcion="Sistema de organizacion de planos de construccion"
+          pageUrl="https://floor-plan-management-system.vercel.app/home"
+          skills={["NestJSIcon", "MongoDbIcon", "ReactIcon", "CssIcon"]}
+        />
         <ProyectoComponent
           imagenUrl="Schneider.jpg"
           titulo="Captain Tsubasa Team"
           descripcion="Calculadora de estadistiscas y sinergias de jugadores"
           pageUrl="https://kaiser-calc-js-git-develop-lautyjaime09-gmailcoms-projects.vercel.app/"
+          skills={["PythonIcon", "ReactIcon", "CssIcon"]}
         />
         <ProyectoComponent
-          imagenUrl="/FloorPlan.png"
-          titulo="FloorPlan Management"
-          descripcion="Sistema de organizacion de planos de construccion"
-          pageUrl="https://floor-plan-management-system.vercel.app/home"
+          imagenUrl="Schneider.jpg"
+          titulo="HopeTrade"
+          descripcion="Red social para intercambios de bienes"
+          pageUrl=""
+          skills={["SpringBootIcon", "MySqlIcon", "ReactIcon", "CssIcon"]}
         />
       </section>
 
@@ -67,7 +86,7 @@ export default function Content() {
 
       <section className="section">
         <h1 className="subtitulo">
-          Email <EmailIcon color={darkMode ? "white" : "black"} />
+          Email <EmailIcon color={darkMode ? "white" : "#424dadff"} />
         </h1>
         <MailComponent />
       </section>

@@ -1,3 +1,4 @@
+import type { Icons } from "../types/Icons";
 import ProyectoCard from "./ProyectoCard";
 import ProyectoDescripcion from "./ProyectoDescripcion";
 
@@ -6,6 +7,7 @@ type ProyectoComponentProps = {
   titulo: string;
   descripcion: string;
   pageUrl: string;
+  skills: Icons[];
 };
 
 export default function ProyectoComponent({
@@ -13,6 +15,7 @@ export default function ProyectoComponent({
   titulo,
   descripcion,
   pageUrl,
+  skills,
 }: ProyectoComponentProps) {
   return (
     <article className="card-container">
@@ -21,6 +24,7 @@ export default function ProyectoComponent({
         titulo={titulo}
         descripcion={descripcion}
         pageUrl={pageUrl}
+        skills={skills}
       />
     </article>
   );
