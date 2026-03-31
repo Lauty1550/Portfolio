@@ -1,5 +1,7 @@
 import { useState } from "react";
 import "../css/Mail.css";
+import "../css/Tooltip.css";
+
 function CopyIcon({ color }: { color: string }) {
   return (
     <svg

@@ -1,4 +1,5 @@
 import "../css/Mail.css";
+import "../css/Tooltip.css";
 
 function SendIcon({ color }: { color: string }) {
   return (

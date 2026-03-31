@@ -1,3 +1,5 @@
+import "../css/Tooltip.css";
+
 export default function ReactIcon() {
   return (
     <svg width="28" height="28" viewBox="0 0 128 128">
