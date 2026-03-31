@@ -6,6 +6,7 @@ type ProyectoDescripcionProps = {
   titulo: string;
   descripcion: string;
   pageUrl: string;
+  codeUrl: string;
   skills: Icons[];
 };
 
@@ -14,6 +15,7 @@ export default function ProyectoDescripcion({
   descripcion,
   pageUrl,
   skills,
+  codeUrl,
 }: ProyectoDescripcionProps) {
   return (
     <main className="proyecto-informacion">
@@ -24,7 +26,11 @@ export default function ProyectoDescripcion({
           <span>{<IconWrapper skill={skill} />}</span>
         ))}
       </article>
-      <BotonLink pageUrl={pageUrl} />
+
+      <div className="project-buttons">
+        <BotonLink pageUrl={pageUrl} type="URL" />
+        <BotonLink pageUrl={codeUrl} type="CODE" />
+      </div>
     </main>
   );
 }

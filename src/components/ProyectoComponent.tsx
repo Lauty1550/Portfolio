@@ -7,6 +7,7 @@ type ProyectoComponentProps = {
   titulo: string;
   descripcion: string;
   pageUrl: string;
+  codeUrl: string;
   skills: Icons[];
 };
 
@@ -16,6 +17,7 @@ export default function ProyectoComponent({
   descripcion,
   pageUrl,
   skills,
+  codeUrl,
 }: ProyectoComponentProps) {
   return (
     <article className="card-container">
@@ -24,6 +26,7 @@ export default function ProyectoComponent({
         titulo={titulo}
         descripcion={descripcion}
         pageUrl={pageUrl}
+        codeUrl={codeUrl}
         skills={skills}
       />
     </article>

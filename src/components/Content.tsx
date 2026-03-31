@@ -63,6 +63,7 @@ export default function Content() {
           titulo="FloorPlan Management"
           descripcion="Sistema de organizacion de planos de construccion"
           pageUrl="https://floor-plan-management-system.vercel.app/home"
+          codeUrl="https://github.com/Lauty1550/Floorplan-Management-System"
           skills={["NestJSIcon", "MongoDbIcon", "ReactIcon", "CssIcon"]}
         />
         <ProyectoComponent
@@ -70,6 +71,7 @@ export default function Content() {
           titulo="Captain Tsubasa Team"
           descripcion="Calculadora de estadistiscas y sinergias de jugadores"
           pageUrl="https://kaiser-calc-js-git-develop-lautyjaime09-gmailcoms-projects.vercel.app/"
+          codeUrl="https://github.com/Lauty1550/KaiserCalc"
           skills={["PythonIcon", "ReactIcon", "CssIcon"]}
         />
         <ProyectoComponent
@@ -77,6 +79,7 @@ export default function Content() {
           titulo="HopeTrade"
           descripcion="Red social para intercambios de bienes"
           pageUrl=""
+          codeUrl=""
           skills={["SpringBootIcon", "MySqlIcon", "ReactIcon", "CssIcon"]}
         />
       </section>
