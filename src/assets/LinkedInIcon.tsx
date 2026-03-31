@@ -19,8 +19,15 @@ function LinkedInIcon({ color }: { color: string }) {
 
 export default function LinkedInButton({ color }: { color: string }) {
   return (
-    <main className="social-button">
-      <LinkedInIcon color={color} />
-    </main>
+    <a
+      href="https://www.linkedin.com/in/lautaro-jaime-b034401ba/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <button className="tooltip-wrapper  button-icon">
+        <LinkedInIcon color={color} />
+        <span className="tooltip-text">LinkedIn</span>
+      </button>
+    </a>
   );
 }
