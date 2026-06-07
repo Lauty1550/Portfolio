@@ -1,0 +1,63 @@
+.tooltip-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip-text {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%) translateY(10px);
+  padding: 5px 8px;
+  border-radius: 8px;
+  white-space: nowrap;
+  pointer-events: none;
+  user-select: none;
+  font-size: 0.75rem;
+  transition: all 0.2s ease;
+  z-index: 10;
+}
+
+/* Flechita estilo globo */
+.tooltip-text::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 6px;
+  border-style: solid;
+}
+
+.tooltip-wrapper:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+.button-icon {
+  background: none;
+  border: none;
+}
+
+.dark-mode {
+  .tooltip-text {
+    background-color: rgb(255 255 255);
+    color: #141313;
+  }
+  .tooltip-text::after {
+    border-color: rgb(255, 255, 255) transparent transparent transparent;
+  }
+}
+
+.light-mode {
+  .tooltip-text {
+    background-color: rgb(24, 22, 22);
+    color: rgb(255 255 255);
+  }
+  .tooltip-text::after {
+    border-color: rgb(24, 22, 22) transparent transparent transparent;
+  }
+}

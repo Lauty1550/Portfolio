@@ -1,11 +1,17 @@
 type ProyectoCardProps = {
   imagenUrl: string;
+  pageUrl: string;
 };
 
-export default function ProyectoCard({ imagenUrl }: ProyectoCardProps) {
+export default function ProyectoCard({
+  imagenUrl,
+  pageUrl,
+}: ProyectoCardProps) {
   return (
     <main className="card">
-      <img className="proyecto-imagen" src={imagenUrl} />
+      <a href={pageUrl} target="_blank" rel="noopener noreferrer">
+        <img className="proyecto-imagen" src={imagenUrl} />
+      </a>
     </main>
   );
 }

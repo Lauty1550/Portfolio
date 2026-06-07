@@ -1,0 +1,26 @@
+.boton-link {
+  width: 110px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.boton-link:hover {
+  transform: scale(1.07);
+}
+
+.light-mode {
+  .boton-link {
+    background-color: #0f172a;
+    color: white;
+  }
+}
