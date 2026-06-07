@@ -6,6 +6,7 @@
   animation-timeline: scroll(root);
   animation-range: 0 250px;
   box-sizing: content-box;
+  z-index: 1000;
 }
 
 @keyframes scroll-navbar {
