@@ -39,7 +39,7 @@ export default function Content() {
         </h1>
         <p className="parrafo">
           Soy estudiante de la UNLP y actualmente me encuentro cursando la
-          Licenciatura en Sistemas. Paralelamente, estoy a tres finales de
+          Licenciatura en Sistemas. Paralelamente, estoy a dos finales de
           completar la carrera de Analista en Tecnologías de la Información y la
           Comunicación (ATIC).
         </p>
@@ -55,32 +55,31 @@ export default function Content() {
 
       <section className="section">
         <h1 className="subtitulo">
-          {" "}
           Proyectos <StarIcon color={darkMode ? "white" : "#424dadff"} />
         </h1>
         <ProyectoComponent
-          imagenUrl="/FloorPlan.jpg"
+          imagenUrl="PanCost.png"
+          titulo="PanCost"
+          descripcion="Sistema de gestión de recetas y costos para una panadería real. Actualmente utilizado por usuarios reales."
+          pageUrl="https://pan-cost-showcase.vercel.app/"
+          codeUrl="https://github.com/Lauty1550/PanCost-frontend.git"
+          skills={["ExpressIcon", "PosgreSqlIcon", "ReactIcon", "CssIcon"]}
+        />
+        <ProyectoComponent
+          imagenUrl="/FloorPlan.png"
           titulo="FloorPlan Management"
-          descripcion="Sistema de organizacion de planos de construccion"
+          descripcion="Sistema de organizacion de planos de construccion. Proyecto universitario."
           pageUrl="https://floor-plan-management-system.vercel.app/home"
           codeUrl="https://github.com/Lauty1550/Floorplan-Management-System"
           skills={["NestJSIcon", "MongoDbIcon", "ReactIcon", "CssIcon"]}
         />
         <ProyectoComponent
           imagenUrl="Schneider.jpg"
-          titulo="Captain Tsubasa Team"
-          descripcion="Calculadora de estadistiscas y sinergias de jugadores"
+          titulo="KaiserCalc"
+          descripcion="Calculadora de estadistiscas y sinergias de jugadores de CTDT. Utilizada por la comunidad latina del juego movil."
           pageUrl="https://kaiser-calc-js-git-develop-lautyjaime09-gmailcoms-projects.vercel.app/"
           codeUrl="https://github.com/Lauty1550/KaiserCalc"
           skills={["PythonIcon", "ReactIcon", "CssIcon"]}
-        />
-        <ProyectoComponent
-          imagenUrl="Schneider.jpg"
-          titulo="HopeTrade"
-          descripcion="Red social para intercambios de bienes"
-          pageUrl=""
-          codeUrl=""
-          skills={["SpringBootIcon", "MySqlIcon", "ReactIcon", "CssIcon"]}
         />
       </section>
 

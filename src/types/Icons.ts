@@ -5,4 +5,6 @@ export type Icons =
   | "MySqlIcon"
   | "NestJSIcon"
   | "SpringBootIcon"
-  | "PythonIcon";
+  | "PythonIcon"
+  | "ExpressIcon"
+  | "PosgreSqlIcon";
