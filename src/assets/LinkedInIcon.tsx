@@ -24,7 +24,7 @@ export default function LinkedInButton({ color }: { color: string }) {
       target="_blank"
       rel="noopener noreferrer"
     >
-      <button className="tooltip-wrapper  button.button-icon-icon">
+      <button className="tooltip-wrapper button-icon">
         <LinkedInIcon color={color} />
         <span className="tooltip-text">LinkedIn</span>
       </button>
