@@ -29,6 +29,15 @@
   height: 40px;
   box-sizing: border-box;
   cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.mail-button:hover {
+  transform: translateY(-2px);
+}
+
+.mail-button:active {
+  transform: translateY(0);
 }
 
 .dark-mode {

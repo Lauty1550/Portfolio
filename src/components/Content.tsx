@@ -60,10 +60,16 @@ export default function Content() {
         <ProyectoComponent
           imagenUrl="PanCost.png"
           titulo="PanCost"
-          descripcion="Sistema de gestión de recetas y costos para una panadería real. Actualmente utilizado por usuarios reales."
+          descripcion="Sistema de gestión de costos para panaderías. Actualmente es utilizado por una panadería local para el análisis de costos y precios."
           pageUrl="https://pan-cost-showcase.vercel.app/"
           codeUrl="https://github.com/Lauty1550/PanCost-frontend.git"
-          skills={["ExpressIcon", "PosgreSqlIcon", "ReactIcon", "CssIcon"]}
+          skills={[
+            "TypeScriptIcon",
+            "ReactIcon",
+            "ExpressIcon",
+            "PosgreSqlIcon",
+            "CssIcon",
+          ]}
         />
         <ProyectoComponent
           imagenUrl="/FloorPlan.png"
@@ -71,7 +77,13 @@ export default function Content() {
           descripcion="Sistema de organizacion de planos de construccion. Proyecto universitario."
           pageUrl="https://floor-plan-management-system.vercel.app/home"
           codeUrl="https://github.com/Lauty1550/Floorplan-Management-System"
-          skills={["NestJSIcon", "MongoDbIcon", "ReactIcon", "CssIcon"]}
+          skills={[
+            "JavaScriptIcon",
+            "ReactIcon",
+            "NestJSIcon",
+            "MongoDbIcon",
+            "CssIcon",
+          ]}
         />
         <ProyectoComponent
           imagenUrl="Schneider.jpg"

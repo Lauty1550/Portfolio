@@ -10,7 +10,7 @@ export default function ProyectoCard({
   return (
     <main className="card">
       <a href={pageUrl} target="_blank" rel="noopener noreferrer">
-        <img className="proyecto-imagen" src={imagenUrl} />
+        <img className="proyecto-imagen" src={imagenUrl} draggable={false} />
       </a>
     </main>
   );

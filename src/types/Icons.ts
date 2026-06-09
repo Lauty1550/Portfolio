@@ -7,4 +7,6 @@ export type Icons =
   | "SpringBootIcon"
   | "PythonIcon"
   | "ExpressIcon"
-  | "PosgreSqlIcon";
+  | "PosgreSqlIcon"
+  | "TypeScriptIcon"
+  | "JavaScriptIcon";
