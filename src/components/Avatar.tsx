@@ -6,7 +6,7 @@ export default function Avatar({ classCSS }: AvatarProps) {
   return (
     <figure className={classCSS}>
       <img
-        src="/Avatar.png"
+        src="/Avatar.jpg"
         className="avatar-content"
         alt="avatar"
         draggable={false}
