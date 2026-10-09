@@ -38,10 +38,11 @@ export default function Content() {
           Sobre mi <AboutMeIcon color={darkMode ? "white" : "#424dadff"} />
         </h1>
         <p className="parrafo">
-          Soy estudiante de la UNLP y actualmente me encuentro cursando la
-          Licenciatura en Sistemas. Paralelamente, estoy a dos finales de
-          completar la carrera de Analista en Tecnologías de la Información y la
-          Comunicación (ATIC).
+          Soy estudiante de la Licenciatura en Sistemas en la UNLP. Completé
+          todas las materias y finales de la carrera de Analista en Tecnologías
+          de la Información y la Comunicación (ATIC), y actualmente me encuentro
+          a la espera de la aprobación de la Práctica Profesional Supervisada
+          (PPS).
         </p>
 
         <p className="parrafo">
